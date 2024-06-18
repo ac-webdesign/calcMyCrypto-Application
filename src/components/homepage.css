@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    font-family: 'Poppins';
+
+}
+.mainMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 93vh;
+    background-color: rgba(219, 242, 215,1);
+    gap: 60px;
+  }
+
+.calculator{
+    width: 308px;
+    height: 86px;
+    background-color: #219E44;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#calculator{
+    z-index: -1;
+}
+#main-menu{
+    z-index: 0;
+}
+.buySell{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    cursor: pointer;
+   
+}
+.buyCrypto{
+    width: 140px;
+    height: 140px;
+    background-color: #219E44;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sellCrypto{
+    width: 140px;
+    height: 140px;
+    background-color: #219E44;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.news{
+    width: 308px;
+    height: 50px;
+    background-color: #219E44;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.settings{
+    width: 308px;
+    height: 50px;
+    background-color: #219E44;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.mainMenu span{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 130px;
+}
+.main-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
