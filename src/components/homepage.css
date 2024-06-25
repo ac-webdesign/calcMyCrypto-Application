@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: auto;
     height: 93vh;
     background-color: rgba(219, 242, 215,1);
     gap: 60px;
@@ -110,7 +110,7 @@ body{
     align-items: center;
     gap: 30px;
     position: absolute;
-    top: 130px;
+    top: 10vh;
 }
 .main-container a{
     text-decoration: none;

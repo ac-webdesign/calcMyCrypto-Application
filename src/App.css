@@ -3,11 +3,12 @@
   box-sizing: border-box;
 }
 .primary-navbar{
-  width: 480px;
+  width: 100vw;
   height: 7vh;
   background-color: green;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 16px;
 }
 .primary-navbar a{
@@ -16,7 +17,8 @@
 }
 .logo-bottom{
   position: absolute;
-  bottom: 10%;
+  bottom: 10px;
+  width: 120px;
 }
 
 

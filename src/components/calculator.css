@@ -42,7 +42,7 @@ label{
     align-items: center;
     gap: 30px;
     position: absolute;
-    top: 120px;
+    top: 10vh;
 }
 .navlink{
     margin-top: 16px;
