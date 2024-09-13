@@ -4,38 +4,53 @@
     padding: 0;
 }
 body{
-    display: flex;
-    font-family: 'Poppins';
-
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
 .mainMenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 93vh;
-    background-color: rgba(219, 242, 215,1);
+    width: 100%;
+    height:110vh;
+    background-image: linear-gradient(to right, #bcd3c3,  #a7eebc);
     gap: 60px;
-  }
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-.calculator{
+.calculator, .buyCrypto, .sellCrypto, .news, .settings {
     width: 308px;
     height: 86px;
-    background-color: #219E44;
+    background-image: linear-gradient(to right, #219E44,  #219E85);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 1;
 }
-#calculator{
-    z-index: -1;
+
+.calculator i, .buyCrypto i, .sellCrypto i, .news i, .settings i {
+    margin-right: -10px;
+    font-size: 1.5rem;
+    color: white;
 }
-#main-menu{
-    z-index: 0;
+
+.calculator:hover, .buyCrypto:hover, .sellCrypto:hover, .news:hover, .settings:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .buySell{
     display: flex;
     flex-direction: row;
@@ -43,60 +58,43 @@ body{
     cursor: pointer;
    
 }
-.buyCrypto{
+.buyCrypto, .sellCrypto {
     width: 140px;
     height: 140px;
-    background-color: #219E44;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-.sellCrypto{
-    width: 140px;
-    height: 140px;
-    background-color: #219E44;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 
+.buyCrypto:hover, .sellCrypto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.news{
+
+.news, .settings {
     width: 308px;
     height: 50px;
-    background-color: #219E44;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     cursor: pointer;
-
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-.settings{
-    width: 308px;
-    height: 50px;
-    background-color: #219E44;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
 
+.news:hover, .settings:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mainMenu span{
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -116,4 +114,14 @@ body{
     text-decoration: none;
     color: white;
     font-weight: 600;
+}
+ .settings i{
+    margin-right: 0;
+    position: relative;
+    left: 100px;
+}
+.news i{
+    margin-right: 0;
+    position: relative;
+    left: 110px;
 }

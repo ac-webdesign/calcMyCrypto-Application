@@ -9,34 +9,44 @@ export const Homepage = () => {
             <div><h2>MAIN MENU</h2></div>
 
             <NavLink to='calculator'>
-                <div className="calculator" id="calculator-click"><span>CRYPTO CALCULATOR</span>
+                <div className="calculator" id="calculator-click">
+                    <i className="fas fa-calculator"></i>
+                    <span>CRYPTO CALCULATOR</span>
                 </div>
             </NavLink>
            
             <div className="buySell">
                 <NavLink to='buycrypto'>
-                    <div className="buyCrypto"><span>BUY CRYPTO</span>
+                    <div className="buyCrypto">
+                        <i className="fas fa-coins"></i>
+                        <span>BUY CRYPTO</span>
                     </div>
                 </NavLink>
 
                 <NavLink to='sellcrypto' >
                     <div className="sellCrypto">
+                        <i className="fas fa-hand-holding-usd"></i>
                         <span>SELL CRYPTO</span>
                     </div>
                 </NavLink>
             </div>
 
             <NavLink to='news'>
-                <div className="news"><span>NEWS</span>
+                <div className="news">
+                    <i className="fas fa-newspaper"></i>
+                    <span>NEWS</span>
                 </div>
             </NavLink>
 
             <NavLink to='settings'>
-                <div className="settings"><span>SETTINGS</span>
+                <div className="settings">
+                    <i className="fas fa-cog"></i>
+                    <span>SETTINGS</span>
                 </div>
             </NavLink>
+            <img src={calcmycryptoLogo} alt="logo" className='logo-bottom'/>
+
         </div>
-        <img src={calcmycryptoLogo} alt="logo" className='logo-bottom'/>
 
     </div>
   )

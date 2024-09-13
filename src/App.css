@@ -5,7 +5,8 @@
 .primary-navbar{
   width: 100vw;
   height: 7vh;
-  background-color: green;
+  background-image: linear-gradient(to bottom, #219E44,  #219E85);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,9 +17,10 @@
   text-decoration: none;
 }
 .logo-bottom{
-  position: absolute;
-  bottom: 3%;
-  width: 100px;
+  position: relative;
+  width: 200px;
+  opacity: 0.2;
+  z-index: 0;
 }
 
 
