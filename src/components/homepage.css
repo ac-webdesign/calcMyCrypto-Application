@@ -41,7 +41,6 @@ body{
 }
 
 .calculator i, .buyCrypto i, .sellCrypto i, .news i, .settings i {
-    margin-right: -10px;
     font-size: 1.5rem;
     color: white;
 }
